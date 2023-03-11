@@ -1,0 +1,8 @@
+@use '../styles/utils/utils.scss' as u;
+
+.layout__container{
+    height: 100%;
+    padding:1.5rem;
+    @include u.flex-d(column, 3rem); 
+    overflow: hidden;
+}

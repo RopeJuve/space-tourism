@@ -1,0 +1,9 @@
+@use "../../styles/utils/utils.scss" as u;
+ .container{
+    $imgUrl: u.image("home", "background-home-mobile.jpg");
+    height: 100vh;
+    background-image: url($imgUrl);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }

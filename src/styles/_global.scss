@@ -1,0 +1,35 @@
+@use './colors/colors' as c;
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+h1{
+  font-family: 'Bellefair';
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 100px;
+  color: c.$lightColor;
+}
+p{
+  font-family: 'Barlow';
+  font-weight: 400;
+  line-height: 1.8rem;
+  font-size: 1rem;
+  color: c.$secondaryColor;
+}
+input {
+  border: none;
+  outline: none;
+}
+
+

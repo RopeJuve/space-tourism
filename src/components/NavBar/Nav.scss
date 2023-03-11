@@ -1,0 +1,24 @@
+@use "../../styles/utils/utils.scss" as u;
+@use "../../styles/colors/colors.scss" as c;
+
+.nav__container {
+  @include u.flex-d(row, 0);
+  justify-content: space-between;
+  align-items: center;
+
+  & img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  &-hamburger {
+    @include u.flex-d(column, 0.37rem);
+    cursor: pointer;
+
+    & span {
+      width: 1.5rem;
+      height: 3px;
+      background-color: c.$secondaryColor;
+    }
+  }
+}

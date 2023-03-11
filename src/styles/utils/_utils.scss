@@ -1,0 +1,12 @@
+
+@function image($category, $img){
+    @return '../../src/assets/' + $category + '/' + $img;
+}
+
+
+@mixin flex-d($direction, $gap){
+    display: flex;
+    gap: $gap;
+    flex-direction: $direction;
+}
+

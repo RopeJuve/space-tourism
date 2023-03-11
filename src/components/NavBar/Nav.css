@@ -1,0 +1,22 @@
+.nav__container {
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__container img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.nav__container-hamburger {
+  display: flex;
+  gap: 0.37rem;
+  flex-direction: column;
+  cursor: pointer;
+}
+.nav__container-hamburger span {
+  width: 1.5rem;
+  height: 3px;
+  background-color: hsl(231, 77%, 90%);
+}/*# sourceMappingURL=Nav.css.map */

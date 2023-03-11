@@ -1,0 +1,8 @@
+.layout__container {
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  overflow: hidden;
+}/*# sourceMappingURL=Layout.css.map */
