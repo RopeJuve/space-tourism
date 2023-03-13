@@ -2,6 +2,10 @@
   display: none;
   padding: 2.45rem 3rem 0 3rem;
 }
+.navLinks__container .active-navLinks {
+  display: flex !important;
+  flex-direction: column;
+}
 @media screen and (min-width: 48em) {
   .navLinks__container {
     display: block;

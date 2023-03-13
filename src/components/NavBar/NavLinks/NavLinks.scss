@@ -3,7 +3,10 @@
 .navLinks__container {
   display: none;
   padding: 2.45rem 3rem 0 3rem;
-
+  & .active-navLinks{
+    display: flex !important;
+    flex-direction: column;
+  }
   @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
     display: block;
     background: rgba(255, 255, 255, 0.04);

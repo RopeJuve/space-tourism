@@ -12,9 +12,12 @@
   }
 
   &-hamburger {
+    position: absolute;
     @include u.flex-d(column, 0.37rem);
     cursor: pointer;
-
+    top: 2.5rem;
+    right: 2.5rem;
+    z-index: 11;
     & span {
       width: 1.5rem;
       height: 3px;

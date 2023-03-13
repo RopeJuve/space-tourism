@@ -1,13 +1,13 @@
 import "./NavLinks.css";
 import { useLocation, Link } from "react-router-dom";
 
-const NavLinks = () => {
+const NavLinks = ({display, navLinksDisplay}) => {
   let location = useLocation();
   console.log(location.pathname);
   const classN = location.pathname === `/crew` ? "active" : "";
-  console.log(classN);
+  console.log(navLinksDisplay);
   return (
-    <div className="navLinks__container">
+    <div className={navLinksDisplay ? "navLinks__container active-navLinks": 'navLinks__container'} >
       <div className="navLinks__container-wrapper">
         {["home", "destinations", "crew", "technology"].map((link, index) => (
           <Link

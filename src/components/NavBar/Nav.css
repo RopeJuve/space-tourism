@@ -10,10 +10,14 @@
   height: 2.5rem;
 }
 .nav__container-hamburger {
+  position: absolute;
   display: flex;
   gap: 0.37rem;
   flex-direction: column;
   cursor: pointer;
+  top: 2.5rem;
+  right: 2.5rem;
+  z-index: 11;
 }
 .nav__container-hamburger span {
   width: 1.5rem;
