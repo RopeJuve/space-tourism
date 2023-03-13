@@ -5,4 +5,10 @@
     padding:1.5rem;
     @include u.flex-d(column, 3rem); 
     overflow: hidden;
+
+    @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
+        padding-top: 0;
+        padding-right: 0;
+    }
+    
 }

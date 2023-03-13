@@ -1,4 +1,4 @@
-import "./HomeComponent.scss";
+import "./HomeComponent.css";
 
 const HomeComponent = ({ title, subtitle, description, btnName }) => {
   return (

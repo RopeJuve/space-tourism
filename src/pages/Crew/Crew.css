@@ -1,0 +1,17 @@
+.crew__container {
+  height: 100vh;
+  background-image: url("../../src/assets/crew/background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-width: 48em) {
+  .crew__container {
+    background-image: url("../../src/assets/crew/background-crew-tablet.jpg");
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .crew__container {
+    background-image: url("../../src/assets/crew/background-crew-desktop.jpg");
+  }
+}/*# sourceMappingURL=Crew.css.map */

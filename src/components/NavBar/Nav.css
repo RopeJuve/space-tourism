@@ -19,4 +19,9 @@
   width: 1.5rem;
   height: 3px;
   background-color: hsl(231, 77%, 90%);
+}
+@media screen and (min-width: 48em) {
+  .nav__container-hamburger {
+    display: none;
+  }
 }/*# sourceMappingURL=Nav.css.map */

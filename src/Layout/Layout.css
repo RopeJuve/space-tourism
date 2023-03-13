@@ -5,4 +5,10 @@
   gap: 3rem;
   flex-direction: column;
   overflow: hidden;
+}
+@media screen and (min-width: 48em) {
+  .layout__container {
+    padding-top: 0;
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=Layout.css.map */

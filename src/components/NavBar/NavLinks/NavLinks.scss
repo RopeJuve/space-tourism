@@ -1,0 +1,21 @@
+@use "../../../styles/utils/utils" as u;
+
+.navLinks__container {
+  display: none;
+  padding: 2.45rem 3rem 0 3rem;
+
+  @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
+    display: block;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    &-wrapper {
+      @include u.flex-d(row, 2.3rem);
+
+      .active {
+        background-color: inherit;
+        border-bottom: 3px solid white;
+        padding-bottom: 2.45rem;
+      }
+    }
+  }
+}

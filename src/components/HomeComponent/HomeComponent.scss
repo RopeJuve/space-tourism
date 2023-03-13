@@ -2,25 +2,27 @@
 @use "../../styles/colors/colors.scss" as c;
 
 .homeComponent__container {
+ 
+  margin: 0 auto;
   flex: 1;
   text-align: center;
-  @include u.flex-d(column, 0);
-  justify-content: space-between;
+  @include u.flex-d(column, clamp(5rem , 25vw, 9.75rem));
   align-items: center;
   &-text-wrapper {
-    @include u.flex-d(column, 1rem);
+    max-width: 28.5rem;
+    @include u.flex-d(column,clamp(1rem, 4vh ,2rem));
 
     & h2 {
       font-family: "Barlow Condensed";
       font-weight: 400;
       letter-spacing: 2.7px;
-      font-size: 1rem;
+      font-size: clamp(0.9rem, 4vw, 1.3rem);
       color: c.$secondaryColor;
     }
   }
   &-btn-wrapper {
-    width: 9.38rem;
-    height: 9.38rem;
+    width: clamp(9.38rem,40vw , 17.1rem);
+    height: clamp(9.38rem,40vw , 17.1rem);
 
     & button {
       width: 100%;
@@ -29,11 +31,18 @@
       border-radius: 50%;
       font-family: "Bellefair";
       font-weight: 400;
-      font-size: 1.4rem;
+      font-size:clamp(1.4rem, 4vw, 2rem);
       line-height: 1.8rem;
       text-align: center;
       letter-spacing: 1.25px;
       cursor: pointer;
     }
   }
+  @media screen and (min-width: map-get(u.$brakePoints, large)) {
+    flex-direction: row;
+    gap: 20rem;
+    align-items: flex-end;
+    padding-bottom:9rem ;
+  }
+ 
 }

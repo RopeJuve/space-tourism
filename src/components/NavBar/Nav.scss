@@ -20,5 +20,9 @@
       height: 3px;
       background-color: c.$secondaryColor;
     }
+
+    @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
+      display: none;
+    }
   }
 }

@@ -1,6 +1,6 @@
 import HomeComponent from "../../components/HomeComponent/HomeComponent";
 import Layout from "../../Layout/Layout";
-import "./Home.scss";
+import "./Home.css";
 
 const Home = () => {
   const { title, subtitle, description, btnName } = {

@@ -1,3 +1,9 @@
+$brakePoints: (
+    tablet: 48em,
+    large:  62.5em
+);
+
+
 
 @function image($category, $img){
     @return '../../src/assets/' + $category + '/' + $img;

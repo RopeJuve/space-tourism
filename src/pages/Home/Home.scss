@@ -6,4 +6,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
+      background-image: url(u.image("home", "background-home-tablet.jpg"));
+    }
+
+    @media screen and (min-width: map-get(u.$brakePoints, large)) {
+      background-image: url(u.image("home", "background-home-desktop.jpg"));
+    }
  }
