@@ -3,12 +3,13 @@ import icon from "../../assets/shared/logo.svg";
 import "./Nav.css";
 import NavLinks from "./NavLinks/NavLinks";
 import NavModal from "./NavModal/NavModal";
+
 export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="nav__container">
       <img src={icon} alt="" />
-      <NavLinks display={""} navLinksDisplay={isOpen} />
+      <NavLinks />
       <div
         className="nav__container-hamburger"
         onClick={() => setIsOpen(!isOpen)}
@@ -17,7 +18,7 @@ export const Nav = () => {
         <span></span>
         <span></span>
       </div>
-      <NavModal display={isOpen ? "block" : "none"} />
+      <NavModal display={isOpen} />
     </div>
   );
 };

@@ -1,4 +1,9 @@
 .navModal__container {
+  display: none;
+}
+
+.navModal__container-visible {
+  padding: 10rem 2.4rem;
   width: 68%;
   height: 100vh;
   position: absolute;
@@ -8,4 +13,14 @@
   -webkit-backdrop-filter: blur(40.7742px);
           backdrop-filter: blur(40.7742px);
   z-index: 10;
+}
+.navModal__container-visible .navModal__container-wrapper {
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column;
+}
+@media screen and (min-width: 48em) {
+  .navModal__container-visible {
+    display: none;
+  }
 }/*# sourceMappingURL=NavModal.css.map */

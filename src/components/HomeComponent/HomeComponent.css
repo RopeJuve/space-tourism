@@ -13,16 +13,26 @@
   gap: clamp(1rem, 4vh, 2rem);
   flex-direction: column;
 }
-.homeComponent__container-text-wrapper h2 {
-  font-family: "Barlow Condensed";
-  font-weight: 400;
-  letter-spacing: 2.7px;
-  font-size: clamp(0.9rem, 4vw, 1.3rem);
-  color: hsl(231, 77%, 90%);
-}
 .homeComponent__container-btn-wrapper {
   width: clamp(9.38rem, 40vw, 17.1rem);
   height: clamp(9.38rem, 40vw, 17.1rem);
+  position: relative;
+}
+.homeComponent__container-btn-wrapper::after {
+  content: "";
+  position: absolute;
+  top: -4rem;
+  left: -4rem;
+  width: calc(100% + 8rem);
+  height: calc(100% + 8rem);
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+.homeComponent__container-btn-wrapper:hover::after {
+  opacity: 0.1;
 }
 .homeComponent__container-btn-wrapper button {
   width: 100%;
@@ -40,7 +50,7 @@
 @media screen and (min-width: 62.5em) {
   .homeComponent__container {
     flex-direction: row;
-    gap: 20rem;
+    gap: 15rem;
     align-items: flex-end;
     padding-bottom: 9rem;
   }

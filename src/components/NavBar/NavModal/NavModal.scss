@@ -1,6 +1,10 @@
 @use "../../../styles/utils/utils" as u;
-
 .navModal__container{
+    display: none;
+    
+}
+.navModal__container-visible{
+    padding: 10rem 2.4rem;
     width: 68%;
     height: 100vh;
     position: absolute;
@@ -9,4 +13,12 @@
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
     z-index: 10;
+
+    .navModal__container-wrapper{
+        @include u.flex-d(column, 2.5rem)
+    }
+
+    @media screen and (min-width: map-get(u.$brakePoints, tablet)){
+        display: none;
+    }
 }

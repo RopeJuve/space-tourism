@@ -3,7 +3,7 @@
 .navLinks__container {
   display: none;
   padding: 2.45rem 3rem 0 3rem;
-  & .active-navLinks{
+  .active-navLinks{
     display: flex !important;
     flex-direction: column;
   }

@@ -2,8 +2,10 @@
 
 .layout__container{
     position: relative;
+    max-width: 90rem;
     height: 100%;
     padding:1.5rem;
+    margin: 0 auto;
     @include u.flex-d(column, 3rem); 
     overflow: hidden;
 

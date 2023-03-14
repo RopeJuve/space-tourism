@@ -1,7 +1,9 @@
 .layout__container {
   position: relative;
+  max-width: 90rem;
   height: 100%;
   padding: 1.5rem;
+  margin: 0 auto;
   display: flex;
   gap: 3rem;
   flex-direction: column;
