@@ -1,7 +1,6 @@
 @use "../../styles/utils/utils.scss" as u;
 .destination__container {
   $imgUrl: u.image("destination", "background-destination-mobile.jpg");
-  height: 100vh;
   background-image: url($imgUrl);
   background-repeat: no-repeat;
   background-position: center;
@@ -12,6 +11,7 @@
       "destination",
       "background-destination-tablet.jpg"
     ));
+    height: 100vh;
   }
 
   @media screen and (min-width: map-get(u.$brakePoints, large)) {

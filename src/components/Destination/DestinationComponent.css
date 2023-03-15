@@ -1,0 +1,103 @@
+.destinationComponent__container {
+  text-align: center;
+}
+.destinationComponent__container img {
+  padding: 1rem;
+  margin-top: clamp(1rem, 7vw, 6rem);
+  margin-bottom: clamp(1rem, 7vw, 6rem);
+  width: 10.625rem;
+}
+@media screen and (min-width: 48em) {
+  .destinationComponent__container img {
+    width: 19.125rem;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .destinationComponent__container img {
+    width: 25.5rem;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .destinationComponent__container .section-destination {
+    height: 29.5rem;
+  }
+}
+.destinationComponent__container .destinationNav__container {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.destinationComponent__container .destinationNav__container .destinationNav__link {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  font-size: clamp(0.9rem, 4vw, 1.3rem);
+  color: hsl(231, 77%, 90%);
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+.destinationComponent__container .destinationNav__container .destinationNav__link.active-link {
+  border-bottom: 3px solid white;
+}
+@media screen and (min-width: 62.5em) {
+  .destinationComponent__container .destinationNav__container {
+    justify-content: flex-start;
+  }
+}
+.destinationComponent__container .destinationComponent__description {
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-bottom: 1px solid #383b4b;
+}
+@media screen and (min-width: 48em) {
+  .destinationComponent__container .destinationComponent__description {
+    width: 80%;
+    padding: 3rem 0;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .destinationComponent__container .destinationComponent__description {
+    text-align: left;
+    width: 27.8125rem;
+  }
+}
+.destinationComponent__container .destinationComponent__distance-travel {
+  padding: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.destinationComponent__container .destinationComponent__distance-travel .distance,
+.destinationComponent__container .destinationComponent__distance-travel .travel {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+@media screen and (min-width: 48em) {
+  .destinationComponent__container .destinationComponent__distance-travel {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .destinationComponent__container .destinationComponent__distance-travel {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 48em) {
+  .destinationComponent__container h2 {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .destinationComponent__container {
+    margin: 2rem 10rem;
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}/*# sourceMappingURL=DestinationComponent.css.map */

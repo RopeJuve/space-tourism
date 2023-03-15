@@ -1,23 +1,23 @@
 @use "../../../styles/utils/utils" as u;
 
 .navLinks__container {
+  max-width: 50rem;
   display: none;
   padding: 2.45rem 3rem 0 3rem;
-  .active-navLinks{
-    display: flex !important;
-    flex-direction: column;
-  }
+  flex: 1;
   @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
     &-wrapper {
       @include u.flex-d(row, 2.3rem);
-
+      & a {
+        padding-bottom: 2.45rem;
+      }
       .active {
         background-color: inherit;
         border-bottom: 3px solid white;
-        padding-bottom: 2.45rem;
       }
     }
   }
