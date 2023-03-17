@@ -3,6 +3,7 @@
 
 .nav__container {
   @include u.flex-d(row, 0);
+
   justify-content: space-between;
   align-items: center;
 

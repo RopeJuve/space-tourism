@@ -6,7 +6,7 @@ const CrewComponent = () => {
   const [crew, setCrew] = useState(1);
 
   const crewMember = data.crew[crew];
-  console.log(crewMember);
+  
 
   return (
     <div className="crewComponent__container">

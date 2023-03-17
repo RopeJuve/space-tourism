@@ -1,5 +1,6 @@
 .crewComponent__container {
   text-align: center;
+  flex: 1;
 }
 .crewComponent__container .crewComponent__content {
   display: flex;
@@ -8,10 +9,9 @@
   align-items: center;
 }
 .crewComponent__container .crewComponent__content-crew-img {
-  margin-top: 2rem;
-  width: 20.5rem;
-  height: 14rem;
-  border-bottom: 1px solid #383B4B;
+  width: 100%;
+  height: 30vh;
+  border-bottom: 1px solid #383b4b;
 }
 .crewComponent__container .crewComponent__content-crew-img img {
   width: 100%;
@@ -21,9 +21,14 @@
 }
 @media screen and (min-width: 48em) {
   .crewComponent__container .crewComponent__content-crew-img {
-    width: 28.5rem;
-    height: 35.75rem;
+    height: 50vh;
     border-bottom: none;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .crewComponent__container .crewComponent__content-crew-img {
+    height: 100%;
+    width: 50%;
   }
 }
 .crewComponent__container .crewComponent__content-crew-description {
@@ -46,6 +51,11 @@
   gap: clamp(0.5rem, 4vw, 0.99rem);
   flex-direction: column;
 }
+@media screen and (min-width: 62.5em) {
+  .crewComponent__container .crewComponent__content-crew-description .heading {
+    margin-bottom: 2rem;
+  }
+}
 .crewComponent__container .crewComponent__content-crew-description .crew-description {
   display: flex;
   gap: 1rem;
@@ -54,19 +64,40 @@
 @media screen and (min-width: 48em) {
   .crewComponent__container .crewComponent__content-crew-description {
     flex-direction: column-reverse;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .crewComponent__container .crewComponent__content-crew-description {
+    width: 60%;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 48em) {
   .crewComponent__container .crewComponent__content {
-    margin-top: 7rem;
+    margin-top: 3rem;
     margin-inline: 9.5rem;
     text-align: center;
     gap: 3rem;
     flex-direction: column-reverse;
   }
 }
+@media screen and (min-width: 62.5em) {
+  .crewComponent__container .crewComponent__content {
+    height: 95%;
+    margin-top: 0;
+    flex-direction: row-reverse;
+    text-align: left;
+    align-items: flex-end;
+  }
+}
 @media screen and (min-width: 48em) {
   .crewComponent__container {
     text-align: left;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .crewComponent__container h2 {
+    margin-left: 9.5rem;
   }
 }/*# sourceMappingURL=CrewComponent.css.map */
