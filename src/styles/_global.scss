@@ -43,12 +43,29 @@ h3 {
   color: #ffffff;
 }
 
-h4{
+h4 {
   font-family: "Bellefair";
   font-weight: 400;
   line-height: 92px;
   font-size: clamp(3.5rem, 10vw, 9.4rem);
   color: c.$lightColor;
+}
+
+h5 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: clamp(1.5rem, 5vw , 3.5rem);
+  line-height: 28px;
+  color: #ffffff;
+}
+
+h6 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size:clamp(1rem, 3vw , 2rem);
+  line-height: 18px;
+  color: #ffffff;
+  opacity: 0.5;
 }
 p {
   font-family: "Barlow";

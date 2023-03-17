@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const NavLinks = ({ navigation }) => {
   const { pathname } = useLocation();
-  console.log(pathname);
+
   const [selected, setSelected] = useState("/home");
 
   useEffect(() => {
