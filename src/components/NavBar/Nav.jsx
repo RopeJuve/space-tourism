@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import icon from "../../assets/shared/logo.svg";
+import icon from "../../../public/assets/shared/logo.svg";
 import "./Nav.css";
 import NavLinks from "./NavLinks/NavLinks";
 import NavModal from "./NavModal/NavModal";

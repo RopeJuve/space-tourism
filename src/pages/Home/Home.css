@@ -1,17 +1,17 @@
 .container {
   height: 100vh;
-  background-image: url("../../src/assets/home/background-home-mobile.jpg");
+  background-image: url("./home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-width: 48em) {
   .container {
-    background-image: url("../../src/assets/home/background-home-tablet.jpg");
+    background-image: url("./home/background-home-tablet.jpg");
   }
 }
 @media screen and (min-width: 62.5em) {
   .container {
-    background-image: url("../../src/assets/home/background-home-desktop.jpg");
+    background-image: url("./home/background-home-desktop.jpg");
   }
 }/*# sourceMappingURL=Home.css.map */

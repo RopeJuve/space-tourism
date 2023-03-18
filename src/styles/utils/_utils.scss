@@ -6,7 +6,7 @@ $brakePoints: (
 
 
 @function image($category, $img){
-    @return '../../src/assets/' + $category + '/' + $img;
+    @return './' + $category + '/' + $img;
 }
 
 
