@@ -6,7 +6,7 @@
     padding:1.5rem;
     margin: 0 auto;
     @include u.flex-d(column, 2rem);
-    justify-content: space-between; 
+    
 
     @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
         height: 100%;

@@ -14,7 +14,7 @@ const Destination = () => {
     <div className="destinationComponent__container">
       <div>
         <h2>
-          <strong>01 </strong>PICK YOUR DESTINATION
+          <span>01 </span>PICK YOUR DESTINATION
         </h2>
         <img src={planet.images.png} alt="" />
       </div>

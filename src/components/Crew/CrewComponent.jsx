@@ -1,17 +1,16 @@
-import "./CrewComponent.scss";
+import "./CrewComponent.css";
 import { data } from "../../data";
 import { useState } from "react";
 
 const CrewComponent = () => {
-  const [crew, setCrew] = useState(1);
+  const [crew, setCrew] = useState(0);
 
   const crewMember = data.crew[crew];
-  
 
   return (
     <div className="crewComponent__container">
       <h2>
-        <strong>02 </strong> MEET YOUR CREW
+        <span>02 </span> MEET YOUR CREW
       </h2>
       <div className="crewComponent__content">
         <div className="crewComponent__content-crew-img">
@@ -21,6 +20,7 @@ const CrewComponent = () => {
           <div className="dots">
             {data.crew.map((_, i) => (
               <button
+                className={crew == i ? "selected" : ""}
                 key={i}
                 data-crew={i}
                 onClick={(e) => setCrew(e.target.getAttribute("data-crew"))}

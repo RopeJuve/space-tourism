@@ -1,6 +1,11 @@
 .destinationComponent__container {
   text-align: center;
 }
+.destinationComponent__container h2 span {
+  font-weight: 700;
+  color: white;
+  opacity: 0.25;
+}
 .destinationComponent__container img {
   padding: 1rem;
   margin-top: clamp(1rem, 7vw, 6rem);
@@ -39,7 +44,12 @@
   cursor: pointer;
 }
 .destinationComponent__container .destinationNav__container .destinationNav__link.active-link {
+  padding-bottom: 0.3125rem;
   border-bottom: 3px solid white;
+}
+.destinationComponent__container .destinationNav__container .destinationNav__link:hover {
+  padding-bottom: 0.3125rem;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 @media screen and (min-width: 62.5em) {
   .destinationComponent__container .destinationNav__container {
@@ -99,5 +109,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+  }
+  .destinationComponent__container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+  .destinationComponent__container h2 span {
+    font-size: 1.8rem;
   }
 }/*# sourceMappingURL=DestinationComponent.css.map */

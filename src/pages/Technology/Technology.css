@@ -1,5 +1,6 @@
 .technology__container {
   height: 100vh;
+  overflow-y: hidden;
   background-image: url("../../src/assets/technology/background-technology-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;

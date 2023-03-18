@@ -2,9 +2,14 @@
 
 .crewComponent__container {
   text-align: center;
-  flex: 1
-  ;
-
+  flex: 1;
+  & h2{
+    & span{
+        font-weight: 700;
+        color: white;
+        opacity: 0.25;
+    }
+  }
   .crewComponent__content {
     
     @include u.flex-d(column, 2rem);
@@ -42,6 +47,13 @@
           cursor: pointer;
           background-color: white;
           opacity: 0.17;
+          transition: all 0.5s ease-in-out;
+          &:hover{
+            opacity: 0.5;
+          }
+          &.selected{
+            opacity: 1;
+          }
         }
       }
       .heading {
@@ -86,8 +98,14 @@
   }
   @media screen and (min-width: map-get(u.$brakePoints, large)){
     
-    & h2{
+    & h2 {
       margin-left: 9.5rem;
+      font-size: 1.8rem;
+      margin-bottom: 0;
+
+      & span{
+        font-size: 1.8rem;
+      }
     }
   } 
 }

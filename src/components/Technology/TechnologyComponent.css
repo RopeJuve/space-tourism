@@ -1,0 +1,140 @@
+.technologyComponent__container {
+  text-align: center;
+  flex: 1;
+}
+.technologyComponent__container h2 span {
+  font-weight: 700;
+  color: white;
+  opacity: 0.25;
+}
+.technologyComponent__container-content {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.technologyComponent__container-content img {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 62.5em) {
+  .technologyComponent__container-content img {
+    transform: scale(1);
+  }
+}
+.technologyComponent__container-content-description {
+  /*    max-width: 28.625rem; */
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.technologyComponent__container-content-description .content-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.technologyComponent__container-content-description .content-buttons button {
+  padding: 0.6875rem 1rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.technologyComponent__container-content-description .content-buttons button:hover {
+  border: 1px solid white;
+}
+.technologyComponent__container-content-description .content-buttons button.selected {
+  color: #0b0d17;
+  background-color: white;
+}
+@media screen and (min-width: 48em) {
+  .technologyComponent__container-content-description .content-buttons button {
+    padding: 1.2rem 1.6rem;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .technologyComponent__container-content-description .content-buttons button {
+    font-size: 2rem;
+    padding: 1.9rem 2.1rem;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .technologyComponent__container-content-description .content-buttons {
+    flex-direction: column;
+  }
+}
+.technologyComponent__container-content-description .content-text {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.technologyComponent__container-content-description .content-text .content-heading h6 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+.technologyComponent__container-content-description .content-text p {
+  max-width: 65ch;
+}
+@media screen and (min-width: 62.5em) {
+  .technologyComponent__container-content-description .content-text {
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 48em) {
+  .technologyComponent__container-content-description {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .technologyComponent__container-content-description {
+    margin: 0;
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 48em) {
+  .technologyComponent__container-content {
+    /* height: 100%; */
+    gap: 7rem;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .technologyComponent__container-content {
+    flex-direction: row-reverse;
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 48em) {
+  .technologyComponent__container {
+    text-align: left;
+  }
+  .technologyComponent__container h2 {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .technologyComponent__container {
+    margin-left: 5rem;
+  }
+  .technologyComponent__container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+  .technologyComponent__container h2 span {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=TechnologyComponent.css.map */

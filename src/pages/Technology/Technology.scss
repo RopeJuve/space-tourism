@@ -2,6 +2,7 @@
 .technology__container {
   $imgUrl: u.image("technology", "background-technology-mobile.jpg");
   height: 100vh;
+  overflow-y: hidden;
   background-image: url($imgUrl);
   background-repeat: no-repeat;
   background-position: center;

@@ -6,6 +6,9 @@
 
   justify-content: space-between;
   align-items: center;
+  .line {
+    display: none;
+  }
 
   & img {
     width: 2.5rem;
@@ -19,14 +22,40 @@
     top: 2.5rem;
     right: 2.5rem;
     z-index: 11;
+
     & span {
       width: 1.5rem;
       height: 3px;
       background-color: c.$secondaryColor;
+      transition: transform 0.3s ease;
+    }
+
+    &.open span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    &.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.open span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
     }
 
     @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
       display: none;
+    }
+  }
+
+  @media screen and (min-width: map-get(u.$brakePoints, large)) {
+    .line {
+      position: absolute;
+      width: 35%;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      top: 3.5rem;
+      left: 9rem;
+      display: block;
+      z-index: 11;
     }
   }
 }

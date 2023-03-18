@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import icon from "../../assets/shared/logo.svg";
 import "./Nav.css";
 import NavLinks from "./NavLinks/NavLinks";
@@ -11,10 +12,15 @@ export const Nav = () => {
 
   return (
     <div className="nav__container">
-      <img src={icon} alt="" />
+      <Link to="/">
+        <img src={icon} alt="" />
+      </Link>
+      <div className="line"></div>
       <NavLinks navigation={navigation} />
       <div
-        className="nav__container-hamburger"
+        className={
+          isOpen ? "nav__container-hamburger open" : "nav__container-hamburger"
+        }
         onClick={() => setIsOpen(!isOpen)}
       >
         <span></span>

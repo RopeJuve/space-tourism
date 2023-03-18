@@ -1,5 +1,5 @@
 .navLinks__container {
-  max-width: 60%;
+  max-width: 70%;
   display: none;
   padding: 2.45rem 3rem 0 3rem;
   flex: 1;
@@ -19,9 +19,21 @@
   }
   .navLinks__container-wrapper a {
     padding-bottom: 2.45rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .navLinks__container-wrapper a:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  }
+  .navLinks__container-wrapper strong {
+    display: none;
   }
   .navLinks__container-wrapper .active {
     background-color: inherit;
     border-bottom: 3px solid white;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .navLinks__container-wrapper strong {
+    display: inline;
   }
 }/*# sourceMappingURL=NavLinks.css.map */

@@ -1,7 +1,7 @@
 @use "../../../styles/utils/utils" as u;
 
 .navLinks__container {
-  max-width: 60%;
+  max-width: 70%;
   display: none;
   padding: 2.45rem 3rem 0 3rem;
   flex: 1;
@@ -14,10 +14,25 @@
       @include u.flex-d(row, 2.3rem);
       & a {
         padding-bottom: 2.45rem;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+          border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+        }
+      }
+      & strong{
+        display: none;
       }
       .active {
         background-color: inherit;
         border-bottom: 3px solid white;
+      }
+    }
+  }
+  @media screen and (min-width: map-get(u.$brakePoints, large)){
+    &-wrapper{
+      & strong{
+        display: inline;
       }
     }
   }

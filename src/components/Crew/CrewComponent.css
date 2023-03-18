@@ -2,6 +2,11 @@
   text-align: center;
   flex: 1;
 }
+.crewComponent__container h2 span {
+  font-weight: 700;
+  color: white;
+  opacity: 0.25;
+}
 .crewComponent__container .crewComponent__content {
   display: flex;
   gap: 2rem;
@@ -45,6 +50,13 @@
   cursor: pointer;
   background-color: white;
   opacity: 0.17;
+  transition: all 0.5s ease-in-out;
+}
+.crewComponent__container .crewComponent__content-crew-description .dots button:hover {
+  opacity: 0.5;
+}
+.crewComponent__container .crewComponent__content-crew-description .dots button.selected {
+  opacity: 1;
 }
 .crewComponent__container .crewComponent__content-crew-description .heading {
   display: flex;
@@ -99,5 +111,10 @@
 @media screen and (min-width: 62.5em) {
   .crewComponent__container h2 {
     margin-left: 9.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+  .crewComponent__container h2 span {
+    font-size: 1.8rem;
   }
 }/*# sourceMappingURL=CrewComponent.css.map */
