@@ -7,7 +7,6 @@
   background-size: cover;
 
   @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
-    height: 100vh;
     background-image: url(u.image(
       "destination",
       "background-destination-tablet.jpg"
@@ -15,7 +14,7 @@
   }
 
   @media screen and (min-width: map-get(u.$brakePoints, large)) {
-    height: 100%;
+    height: 100vh;
     background-image: url(u.image(
       "destination",
       "background-destination-desktop.jpg"

@@ -6,13 +6,12 @@
 }
 @media screen and (min-width: 48em) {
   .destination__container {
-    height: 100vh;
     background-image: url("./destination/background-destination-tablet.jpg");
   }
 }
 @media screen and (min-width: 62.5em) {
   .destination__container {
-    height: 100%;
+    height: 100vh;
     background-image: url("./destination/background-destination-desktop.jpg");
   }
 }/*# sourceMappingURL=Destination.css.map */

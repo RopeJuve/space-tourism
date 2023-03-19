@@ -9,7 +9,6 @@
   background-size: cover;
 
   @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
-    height: 100%;
     background-image: url(u.image(
       "technology",
       "background-technology-tablet.jpg"

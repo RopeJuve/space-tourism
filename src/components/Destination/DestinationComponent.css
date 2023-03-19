@@ -1,5 +1,6 @@
 .destinationComponent__container {
   text-align: center;
+  height: 70%;
 }
 .destinationComponent__container h2 span {
   font-weight: 700;

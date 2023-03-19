@@ -8,7 +8,6 @@
 }
 @media screen and (min-width: 48em) {
   .technology__container {
-    height: 100%;
     background-image: url("./technology/background-technology-tablet.jpg");
   }
 }
