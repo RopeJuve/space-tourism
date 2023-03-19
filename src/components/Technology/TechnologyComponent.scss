@@ -74,7 +74,7 @@
           }
         }
         & p {
-          max-width: 65ch;
+          max-width: 60ch;
         }
         @media screen and (min-width: map-get(u.$brakePoints, large)) {
           gap: 3rem;
@@ -101,6 +101,7 @@
       flex-direction: row-reverse;
       gap: 0;
       justify-content: space-between;
+      margin: 0;
     }
   }
   @media screen and (min-width: map-get(u.$brakePoints, tablet)) {

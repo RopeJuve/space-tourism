@@ -106,10 +106,10 @@
         font-size: 1.8rem;
       }
     }
-    margin: 2rem 10rem;
+    margin: 0 10rem;
     @include u.flex-d(row, 0);
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     
   }
 }

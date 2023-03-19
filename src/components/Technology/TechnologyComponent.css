@@ -83,7 +83,7 @@
   margin-bottom: 0.8rem;
 }
 .technologyComponent__container-content-description .content-text p {
-  max-width: 65ch;
+  max-width: 60ch;
 }
 @media screen and (min-width: 62.5em) {
   .technologyComponent__container-content-description .content-text {
@@ -116,6 +116,7 @@
     flex-direction: row-reverse;
     gap: 0;
     justify-content: space-between;
+    margin: 0;
   }
 }
 @media screen and (min-width: 48em) {

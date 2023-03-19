@@ -2,13 +2,14 @@
 .technology__container {
   $imgUrl: u.image("technology", "background-technology-mobile.jpg");
   height: 100vh;
-  overflow-y: hidden;
+  overflow-x: hidden;
   background-image: url($imgUrl);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media screen and (min-width: map-get(u.$brakePoints, tablet)) {
+    height: 100%;
     background-image: url(u.image(
       "technology",
       "background-technology-tablet.jpg"

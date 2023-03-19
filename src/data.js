@@ -76,7 +76,7 @@ export const data = {
     {
       name: "Anousheh Ansari",
       images: {
-        png: "../../../public/assets/crew/image-anousheh-ansari.png",
+        png: "./assets/crew/image-anousheh-ansari.png",
         webp: "./assets/crew/image-anousheh-ansari.webp",
       },
       role: "Flight Engineer",

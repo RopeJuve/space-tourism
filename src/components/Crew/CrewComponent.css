@@ -32,7 +32,6 @@
 }
 @media screen and (min-width: 62.5em) {
   .crewComponent__container .crewComponent__content-crew-img {
-    height: 100%;
     width: 50%;
   }
 }
@@ -100,7 +99,6 @@
     margin-top: 0;
     flex-direction: row-reverse;
     text-align: left;
-    align-items: flex-end;
   }
 }
 @media screen and (min-width: 48em) {

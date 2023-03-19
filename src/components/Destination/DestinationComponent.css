@@ -103,12 +103,12 @@
 }
 @media screen and (min-width: 62.5em) {
   .destinationComponent__container {
-    margin: 2rem 10rem;
+    margin: 0 10rem;
     display: flex;
     gap: 0;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
   }
   .destinationComponent__container h2 {
     font-size: 1.8rem;

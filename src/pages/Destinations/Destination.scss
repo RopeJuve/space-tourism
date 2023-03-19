@@ -15,7 +15,7 @@
   }
 
   @media screen and (min-width: map-get(u.$brakePoints, large)) {
-    
+    height: 100%;
     background-image: url(u.image(
       "destination",
       "background-destination-desktop.jpg"

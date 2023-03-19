@@ -1,6 +1,6 @@
 .technology__container {
   height: 100vh;
-  overflow-y: hidden;
+  overflow-x: hidden;
   background-image: url("./technology/background-technology-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -8,6 +8,7 @@
 }
 @media screen and (min-width: 48em) {
   .technology__container {
+    height: 100%;
     background-image: url("./technology/background-technology-tablet.jpg");
   }
 }

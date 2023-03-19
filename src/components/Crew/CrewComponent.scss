@@ -29,7 +29,6 @@
       }
 
       @media screen and (min-width: map-get(u.$brakePoints, large)){
-        height: 100%;
         width: 50%;
       } 
     }
@@ -90,7 +89,6 @@
       margin-top: 0;
       flex-direction: row-reverse;
       text-align: left;
-      align-items: flex-end;
     }
   }
   @media screen and (min-width: map-get(u.$brakePoints, tablet)) {

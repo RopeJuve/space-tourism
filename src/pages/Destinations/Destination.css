@@ -12,6 +12,7 @@
 }
 @media screen and (min-width: 62.5em) {
   .destination__container {
+    height: 100%;
     background-image: url("./destination/background-destination-desktop.jpg");
   }
 }/*# sourceMappingURL=Destination.css.map */
